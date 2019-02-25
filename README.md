@@ -8,4 +8,6 @@ Used:
 - Logo Designed in Photoshop
 
 Main Screen 
-(github-large)[https://github.com/ndricimrr/PharmaSales/blob/master/image/Capture.JPG]
+
+
+[https://github.com/ndricimrr/PharmaSales/blob/master/image/Capture.JPG]
