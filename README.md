@@ -10,4 +10,4 @@ Used:
 Main Screen 
 
 
-[https://github.com/ndricimrr/PharmaSales/blob/master/image/Capture.JPG]
+![MAIN-SCREEN-PIC](https://github.com/ndricimrr/PharmaSales/blob/master/image/Capture.JPG)
