@@ -29,10 +29,10 @@ Used:
 **Using DropDown Search Bar On Sales Screen**
 ![CHECK-DROPDOWN](https://github.com/ndricimrr/PharmaSales/blob/master/image/dropdown%20sell.JPG)
 
-**Using DropDown Search Bar On Sales Screen  2**
+**Item to be sold is selected from dropdown menu**
 ![CHECK-DROPDOWN](https://github.com/ndricimrr/PharmaSales/blob/master/image/selling%20process.JPG)
 
-**Using DropDown Search Bar On Sales Screen  3**
+**Sale Done Sucessfully Message**
 ![CHECK-DROPDOWN](https://github.com/ndricimrr/PharmaSales/blob/master/image/sale%20done.JPG)
 
 
