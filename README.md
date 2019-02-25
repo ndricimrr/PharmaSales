@@ -19,3 +19,16 @@ Used:
 
 **Inventory Screen Add New Product Erroneus Input Checking**
 ![INVENTORY-SCREEN-ERROR](https://github.com/ndricimrr/PharmaSales/blob/master/image/INVENTORY_error.JPG)
+
+**Bill Data Checking**
+![BILLS-SCREEN-LIST-CHECK](https://github.com/ndricimrr/PharmaSales/blob/master/image/bill%20mngmnt.JPG)
+
+**Checking Products with near expiration dates**
+![CHECK-EXPIRATION](https://github.com/ndricimrr/PharmaSales/blob/master/image/search.JPG)
+
+**Checking Products with near expiration dates**
+![CHECK-EXPIRATION](https://github.com/ndricimrr/PharmaSales/blob/master/image/search.JPG)
+
+
+
+
