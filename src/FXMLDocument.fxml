@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="622.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmashitje.WelcomeScreen.FXMLDocumentController">
+   <center>
+      <Group BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="609.0" fitWidth="781.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fxpic.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="273.0" layoutY="45.0" text="PharmaShitje">
+               <font>
+                  <Font name="System Bold" size="40.0" />
+               </font>
+            </Label>
+            <Button layoutX="50.0" layoutY="127.0" onAction="#goToArtikujtPage" prefHeight="58.0" prefWidth="164.0" stylesheets="@css/artikujtStyle.css" text="ARTIKUJT" />
+            <Button layoutX="54.0" layoutY="370.0" onAction="#goToShitjetPage" prefHeight="58.0" prefWidth="164.0" stylesheets="@css/shitjetStyle.css" text="SHITJET" />
+            <Button layoutX="56.0" layoutY="292.0" onAction="#goToSkadencatPage" prefHeight="58.0" prefWidth="164.0" stylesheets="@css/skadencatStyle.css" text="SKADENCAT" />
+            <Button layoutX="52.0" layoutY="213.0" onAction="#goToFaturatPage" prefHeight="58.0" prefWidth="164.0" stylesheets="@css/faturatStyle.css" text="FATURAT" />
+         </children>
+      </Group>
+   </center>
+</BorderPane>

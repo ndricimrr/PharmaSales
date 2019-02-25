@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="gridPane" layoutX="11.0" layoutY="8.0" prefHeight="500.0" prefWidth="1198.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pharmashitje.WelcomeScreen.FXMLArtikujtController">
+          <stylesheets>
+              <URL value="@fxmlartikujt.css" />
+           </stylesheets>
+          <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1178.0" minWidth="10.0" prefWidth="1178.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.0" minWidth="0.0" prefWidth="20.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="125.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="125.0" minHeight="0.0" prefHeight="26.666666507720947" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="125.0" minHeight="0.0" prefHeight="26.666666507720947" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="526.0" minHeight="10.0" prefHeight="473.33333349227905" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="205.66668701171875" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="205.66668701171875" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="37.0" prefWidth="253.0" text="INVENTORY">
+               <font>
+                  <Font size="32.0" />
+               </font>
+         <GridPane.margin>
+            <Insets top="30.0" />
+         </GridPane.margin>
+            </Label>
+      <GridPane prefHeight="465.0" prefWidth="973.0" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="933.0" minWidth="10.0" prefWidth="893.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.0" minWidth="0.0" prefWidth="285.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="158.6666717529297" minHeight="0.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="457.0" minHeight="10.0" prefHeight="373.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="45.666656494140625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox prefHeight="40.0" prefWidth="882.0" GridPane.rowIndex="2">
+               <children>
+                        <Button fx:id="artikujtPage" mnemonicParsing="false" onAction="#goToHomePage" prefHeight="40.0" prefWidth="158.0" text="HOME">
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                        </Button>
+                  <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#refreshAction" prefHeight="38.0" prefWidth="114.0" text="Refresh">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets top="10.0" />
+               </GridPane.margin>
+            </HBox>
+            <TableView fx:id="artikujtTable" editable="true" prefHeight="373.0" prefWidth="911.0" GridPane.rowIndex="1">
+              <columns>
+                  <TableColumn fx:id="kodiCol" prefWidth="53.0" text="Code" />
+                  <TableColumn fx:id="artikulliCol" prefWidth="152.0" text="Product name" />
+                  <TableColumn fx:id="njesiaCol" prefWidth="75.0" text="Unit" />
+                  <TableColumn fx:id="cmimHCol" prefWidth="85.0" text="E Price" />
+                  <TableColumn fx:id="cmimDCol" minWidth="0.0" prefWidth="85.0" text="EX Price" />
+                  <TableColumn fx:id="TVSHcol" minWidth="0.0" prefWidth="61.0" text="TAX" />
+                  <TableColumn fx:id="gjendjeCol" prefWidth="89.0" text="Stock" />
+                  <TableColumn fx:id="totaliCol" prefWidth="63.0" text="Total" />
+                  <TableColumn fx:id="skadenceCol" prefWidth="102.0" text="Expiry" />
+                  <TableColumn id="background" fx:id="buttonCol" prefWidth="124.0" text="Action" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox fx:id="vbox" prefHeight="77.0" prefWidth="189.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="137.0" text="Search products:" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+          <TitledPane animated="false" prefHeight="384.0" prefWidth="230.0" text="Add Product" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="356.0" prefWidth="300.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="52.0" text="Code: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="4.0" />
+                                 </padding>
+                              </Label>
+                              <TextField fx:id="kodi_Field" onKeyPressed="#onEnterKodi" prefHeight="25.0" prefWidth="57.0" promptText="123" />
+                              <CheckBox fx:id="kodi_checkbox" graphicTextGap="5.0" mnemonicParsing="false" onAction="#checkBoxAction" prefHeight="21.0" prefWidth="92.0" text="Auto">
+                                 <HBox.margin>
+                                    <Insets left="2.0" top="2.0" />
+                                 </HBox.margin>
+                              </CheckBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="54.0" text="Name: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="24.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="artikulli_Field" onKeyPressed="#onEnterArtikulli" prefHeight="25.0" prefWidth="104.0" promptText="Article 1..." />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label text="Unit: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ComboBox fx:id="njesiaField" editable="true" onKeyPressed="#onEnterNjesia" prefHeight="25.0" prefWidth="104.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label text="Enter Price :">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="cmimH_Field" onKeyPressed="#onEnterCmimH" prefHeight="25.0" prefWidth="104.0" promptText="120" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="74.0" text="Exit Price:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="2.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="cmimD_Field" onKeyPressed="#onEnterCmimD" prefHeight="25.0" prefWidth="104.0" promptText="200" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="49.0" text="TAX:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="29.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ComboBox fx:id="TVSH_Field" editable="true" onKeyPressed="#onEnterTVSH" prefHeight="25.0" prefWidth="104.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="51.0" text="Stock: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="27.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="gjendja_Field" onKeyPressed="#onEnterGjendja" prefHeight="25.0" prefWidth="104.0" promptText="25" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="54.0" text="Expiry: ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <DatePicker fx:id="datePicker" onKeyPressed="#onEnterSkadenca" prefHeight="25.0" prefWidth="105.0" promptText="31/12/2019" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="28.0" prefWidth="205.0">
+                           <children>
+                              <Button fx:id="addRowButton" mnemonicParsing="false" onAction="#addRowToTable" onKeyPressed="#onEnterButton" text="ADD">
+                                 <HBox.margin>
+                                    <Insets left="135.0" top="5.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="HP Simplified Light" size="15.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+          </TitledPane>
+         </children>
+      </GridPane>
+      <VBox prefHeight="465.0" prefWidth="316.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <children>
+            <Accordion prefHeight="0.0" prefWidth="234.0" />
+         </children>
+      </VBox>
+         </children>
+      </GridPane>
