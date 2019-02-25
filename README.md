@@ -18,4 +18,4 @@ Used:
 ![INVENTORY-SCREEN-PIC](https://github.com/ndricimrr/PharmaSales/blob/master/image/INVENTORY.JPG)
 
 **Inventory Screen Add New Product Erroneus Input Checking**
-![INVENTORY-SCREEN-ERROR]()
+![INVENTORY-SCREEN-ERROR](https://github.com/ndricimrr/PharmaSales/blob/master/image/INVENTORY_error.JPG)
