@@ -4,6 +4,7 @@ This project consists in a small Pharmacy Sales Management Application.
 Used:
 - JavaFX for the app design
 - SQL for the database management
+- CSS for buton designs
 - Programmed on Netbeans 
 - Logo Designed in Photoshop
 
